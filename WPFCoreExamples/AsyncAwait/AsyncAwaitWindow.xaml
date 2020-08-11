@@ -4,27 +4,12 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFCoreExamples.AsyncAwait"
+        xmlns:customControls="clr-namespace:WPFCoreExamples.AsyncAwait.CustomControls"
         mc:Ignorable="d"
-        Title="AsyncAwaitWindow" Height="450" Width="800" WindowStartupLocation="CenterOwner">
+        Title="AsyncAwaitWindow" Height="450" Width="400" WindowStartupLocation="CenterOwner">
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-        </Grid.RowDefinitions>
-
         <StackPanel>
-            <TextBlock>Report Progress Example</TextBlock>
-            <Button x:Name="ProgressBarButton" Click="ProgressBarButton_Click">Start</Button>
-            <ProgressBar x:Name="ProgressBar"
-                         Height="20"></ProgressBar>
+            <customControls:Core31ProgressReport/>
         </StackPanel>
-
     </Grid>
 </Window>
